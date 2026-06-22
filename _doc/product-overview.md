@@ -66,6 +66,11 @@ Sharp, credible, advisor-grade. Speaks the language of founders and investors �
 packaging, revenue models, GTM — without fluff. Calm and confident, not hypey. Outputs
 read like a strong analyst memo, not marketing copy.
 
+The app is **Square Peg-branded** — it carries the Square Peg logo as its product icon
+and includes an "About Square Peg" firm page (see Scope). The product is positioned as
+the firm's own monetization tool, so founders and IC viewers see the Square Peg lens
+behind the analysis.
+
 ## Scope
 
 **In scope (built v1):** company-profile input; AI-generated ranked monetization plays
