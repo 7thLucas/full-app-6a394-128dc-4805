@@ -65,6 +65,34 @@ export type TStageOption = {
   hint?: string;
 };
 
+export type TFirmTeamMember = {
+  name: string;
+  title?: string;
+};
+
+export type TFirmTeamGroup = {
+  group: string;
+  members: TFirmTeamMember[];
+};
+
+export type TFirmPoint = {
+  title: string;
+  body: string;
+};
+
+export type TFirmPage = {
+  navLabel: string;
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  thesisHeading: string;
+  thesisPoints: TFirmPoint[];
+  processHeading: string;
+  processPoints: TFirmPoint[];
+  teamHeading: string;
+  teamGroups: TFirmTeamGroup[];
+};
+
 export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
@@ -80,6 +108,8 @@ export type TDefaultConfigurableData = {
   playsToGenerate?: number;
   sectors?: string[];
   stages?: TStageOption[];
+  // Firm page content
+  firmPage?: TFirmPage;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
@@ -163,4 +193,87 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
     { id: "early-traction", label: "Early traction", hint: "First paying customers, searching for repeatable revenue" },
     { id: "scaling", label: "Scaling", hint: "Proven model, focused on growth and expansion economics" },
   ],
+  firmPage: {
+    navLabel: "About Square Peg",
+    eyebrow: "The Firm",
+    heading: "About Square Peg",
+    intro:
+      "Founded in 2012, Square Peg is built on a simple belief: that founders from our corner of the world — Australia, Israel, and Southeast Asia — will shape the future. A generalist technology investor with founders at the center.",
+    thesisHeading: "Our thesis",
+    thesisPoints: [
+      {
+        title: "Founders at the center",
+        body: "A generalist technology investor that backs founders from our corner of the world — Australia, Israel, and Southeast Asia — in the belief that they will shape the future.",
+      },
+      {
+        title: "Hyper-scale and defensibility",
+        body: "We look for hyper-scale potential paired with defensibility — products customers choose for their inherent value.",
+      },
+      {
+        title: "Where we go deep",
+        body: "Sector strengths span AI infrastructure and applications, B2B SaaS, and fintech, alongside edtech and climate tech.",
+      },
+      {
+        title: "Stage and ownership",
+        body: "Our core fund (Fund 4) invests from Seed to Series B, while the Opportunities Fund backs later-stage emerging winners. We typically target ~10–20% ownership and manage $3.25B+ in AUM (as of December 2024).",
+      },
+    ],
+    processHeading: "How we work",
+    processPoints: [
+      {
+        title: "People-first",
+        body: "We back founders with a compelling vision who are surrounded by talented, mission-driven people.",
+      },
+      {
+        title: "Concentrated and committed",
+        body: "We concentrate on a handful of new founders each year and invest repeatedly — an average of about three investments per portfolio company — supporting founders the whole way.",
+      },
+      {
+        title: "A conversation, not a pitch",
+        body: "Our meetings are more a conversation, less a pitch.",
+      },
+      {
+        title: "Local partners, global reach",
+        body: "We bring a long-term mindset over short-term equity: local partners with global reach.",
+      },
+    ],
+    teamHeading: "Our team",
+    teamGroups: [
+      {
+        group: "Partners",
+        members: [
+          { name: "Paul Bassat", title: "Co-Founder & Partner" },
+          { name: "Tony Holt", title: "Co-Founder & Partner" },
+          { name: "Dan Krasnostein", title: "Partner" },
+          { name: "Tushar Roy", title: "Partner" },
+          { name: "Piruze Sabuncu", title: "Partner" },
+          { name: "Philippe Schwartz", title: "Partner" },
+          { name: "Yonatan Sela", title: "Partner" },
+        ],
+      },
+      {
+        group: "Principals",
+        members: [
+          { name: "Ed Barker" },
+          { name: "Jethro Cohen" },
+          { name: "Jun Wei Tan" },
+        ],
+      },
+      {
+        group: "Co-founders",
+        members: [
+          { name: "Barry Brott" },
+          { name: "Justin Liberman" },
+        ],
+      },
+      {
+        group: "Operations & IR",
+        members: [
+          { name: "Leila Lee", title: "Partner & Head of Distribution" },
+          { name: "Amanda Hjorring", title: "Partner & COO" },
+          { name: "Luke Stevens", title: "CFO" },
+        ],
+      },
+    ],
+  },
 };

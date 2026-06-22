@@ -239,5 +239,73 @@ export const configurableSchemas: ConfigurableSchemas = {
         ],
       },
     },
+
+    // ── Firm page content ──────────────────────────────────────────────────
+    {
+      fieldName: "firmPage",
+      type: "object",
+      required: false,
+      label: "Firm Page",
+      fields: [
+        { fieldName: "navLabel", type: "string", required: true, label: "Nav Label", maxLength: 60 },
+        { fieldName: "eyebrow", type: "string", required: false, label: "Eyebrow", maxLength: 60 },
+        { fieldName: "heading", type: "string", required: true, label: "Page Heading", maxLength: 120 },
+        { fieldName: "intro", type: "string", required: false, label: "Intro", maxLength: 600 },
+        { fieldName: "thesisHeading", type: "string", required: true, label: "Thesis Heading", maxLength: 80 },
+        {
+          fieldName: "thesisPoints",
+          type: "array",
+          required: false,
+          label: "Thesis Points",
+          item: {
+            type: "object",
+            fields: [
+              { fieldName: "title", type: "string", required: true, label: "Title" },
+              { fieldName: "body", type: "string", required: true, label: "Body" },
+            ],
+          },
+        },
+        { fieldName: "processHeading", type: "string", required: true, label: "Process Heading", maxLength: 80 },
+        {
+          fieldName: "processPoints",
+          type: "array",
+          required: false,
+          label: "Process Points",
+          item: {
+            type: "object",
+            fields: [
+              { fieldName: "title", type: "string", required: true, label: "Title" },
+              { fieldName: "body", type: "string", required: true, label: "Body" },
+            ],
+          },
+        },
+        { fieldName: "teamHeading", type: "string", required: true, label: "Team Heading", maxLength: 80 },
+        {
+          fieldName: "teamGroups",
+          type: "array",
+          required: false,
+          label: "Team Groups",
+          item: {
+            type: "object",
+            fields: [
+              { fieldName: "group", type: "string", required: true, label: "Group Name" },
+              {
+                fieldName: "members",
+                type: "array",
+                required: false,
+                label: "Members",
+                item: {
+                  type: "object",
+                  fields: [
+                    { fieldName: "name", type: "string", required: true, label: "Name" },
+                    { fieldName: "title", type: "string", required: false, label: "Title" },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
   ],
 };
