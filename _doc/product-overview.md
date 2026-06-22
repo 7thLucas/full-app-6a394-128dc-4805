@@ -77,6 +77,11 @@ behind the analysis.
 with rationale, risks, and fit; suggested validation experiments. This shipped as the
 single core engine.
 
+**Added since v1:** an "About Square Peg" firm page (route `/firm`, reachable from the
+app nav) presenting the firm's thesis, process/approach, and team — sourced from public
+info on squarepeg.vc. Plus Square Peg branding (logo as product icon). These give the
+tool the firm's identity and context; they are not part of the core monetization engine.
+
 **Out of scope (v1) — planned next:** saving and comparing analyses across companies
 (history, comparison views, saved decks). Deliberately deferred from the first build; the
 natural next feature set.
