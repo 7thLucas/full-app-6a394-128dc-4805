@@ -17,16 +17,24 @@ structured, defensible answers fast.
 
 ## Who it's for
 
-The primary holder is an operator who evaluates monetization across multiple seed-stage
-tech companies. Likely personas:
+The primary holder is a **VC** (confirmed: an investor at Square Peg) who evaluates
+monetization across many seed-stage tech companies. The product serves two distinct jobs
+for them:
 
-- **Accelerator / incubator program leads** — running monetization clinics across a cohort.
-- **VCs / angels** — portfolio value-creation, helping companies find a revenue model.
-- **Startup advisors / fractional consultants** — productizing their monetization playbook.
-- **Seed-stage founders** — pressure-testing their own model before going to market.
+- **Portfolio value-creation** — helping existing portfolio companies find and sharpen
+  the best monetization path, so a partner can put a defensible recommendation in front
+  of a founder.
+- **Deal-evaluation lens** — pressure-testing how a *potential* investment could
+  monetize, as input to an investment decision or IC memo.
 
-(The exact primary persona is being confirmed; the product is designed to serve the
-multi-company operator first while remaining useful to an individual founder.)
+A defining nuance: monetization strategy must **adapt by company stage** (pre-revenue →
+early traction → scaling). The same company gets different recommended plays depending on
+where it is, and the app reasons explicitly about stage.
+
+Secondary, still-served personas (the tool remains useful to them, but the VC is the
+design center): accelerator/incubator program leads, angels and other early-stage
+investors, startup advisors productizing a monetization playbook, and seed-stage founders
+pressure-testing their own model.
 
 ## Core workflow
 
