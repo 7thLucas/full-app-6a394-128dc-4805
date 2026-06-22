@@ -114,7 +114,8 @@ export type TDefaultConfigurableData = {
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
   appName: "MonetizeMaxxing",
-  logoUrl: "",
+  logoUrl:
+    "https://client-api.quantumbyte.ai/uploads/ats0u7ho/4805/assets/27c76cd3-2d84-4def-abdc-dfced7323ed0_1782172536079_mrzwb2.png",
   brandColor: {
     // Base — soft off-white canvas, deep ink text (analyst-memo aesthetic)
     background:        "#fafaf8",
