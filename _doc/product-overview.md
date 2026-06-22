@@ -1,11 +1,11 @@
 # Product Overview
 
-> Working title: **RevenuePath AI** (provisional — branding to be confirmed with the user)
-> Status: initial core truth, drafted at project kickoff. Details to be sharpened as scoping continues.
+> Product name: **MonetizeMaxxing** (confirmed with the user)
+> Status: v1 built and live — the core monetization engine. Core truth maintained as the product evolves.
 
 ## What it is
 
-RevenuePath AI is an AI strategist that turns a seed-stage tech company's profile into a
+MonetizeMaxxing is an AI strategist that turns a seed-stage tech company's profile into a
 ranked set of monetization strategies the team can actually test. The user describes a
 company — what it does, who it serves, its stage and early traction — and the AI returns
 concrete revenue plays (pricing models, packaging, revenue streams) with the reasoning
