@@ -8,10 +8,30 @@ export async function connectMongoDB(): Promise<void> {
     return;
   }
 
-  const mongoUri = process.env.MONGODB_URI;
-  if (!mongoUri) {
+  const rawMongoUri = process.env.MONGODB_URI;
+  if (!rawMongoUri) {
     throw new Error("MONGODB_URI environment variable is required");
   }
+
+  // Ensure SCRAM auth resolves against the `admin` database. The provisioned
+  // user lives in `admin`, but without an explicit authSource the driver
+  // authenticates against the URI's default DB and fails with
+  // "Authentication failed" (code 18). Only inject when credentials are
+  // present and authSource isn't already specified.
+  const mongoUri = ((): string => {
+    try {
+      const url = new URL(rawMongoUri);
+      const hasCredentials = Boolean(url.username);
+      if (hasCredentials && !url.searchParams.has("authSource")) {
+        url.searchParams.set("authSource", "admin");
+        return url.toString();
+      }
+      return rawMongoUri;
+    } catch {
+      // Non-standard URI the URL parser can't handle; fall back as-is.
+      return rawMongoUri;
+    }
+  })();
 
   try {
     const connection = await mongoose.connect(mongoUri, {
