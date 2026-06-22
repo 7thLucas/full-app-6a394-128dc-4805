@@ -1,0 +1,41 @@
+<style>
+  .mode-portrait .sl-cover { flex-direction: column; }
+  .mode-portrait .sl-visual { width: 100%; height: 40%; }
+  .mode-landscape .sl-cover { flex-direction: row; }
+  .mode-landscape .sl-visual { width: 42%; height: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover flex w-full h-full">
+    <!-- Content column -->
+    <div class="flex flex-col justify-between p-12 flex-1">
+      <div>
+        <span class="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full">RevenuePath AI</span>
+      </div>
+
+      <div class="max-w-xl">
+        <h1 class="text-5xl font-extrabold leading-[1.05] text-slate-900">
+          Every seed-stage idea<br>
+          deserves a <span class="text-emerald-600">revenue model.</span>
+        </h1>
+        <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+          An AI strategist that turns a tech company's profile into a ranked set of
+          monetization plays your team can actually test — with the reasoning behind each.
+        </p>
+      </div>
+
+      <div class="text-slate-500">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual anchor -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=minimal%20editorial%20illustration%20of%20a%20growth%20chart%20and%20stacked%20coins%20merging%20into%20a%20glowing%20pathway%2C%20emerald%20and%20deep%20navy%20palette%2C%20premium%20startup%20finance%20aesthetic%2C%20clean%20white%20background"
+        alt="Monetization pathway"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-tr from-emerald-900/20 to-transparent"></div>
+    </div>
+  </div>
+</section>
