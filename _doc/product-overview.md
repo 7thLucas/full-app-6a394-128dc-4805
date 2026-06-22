@@ -46,7 +46,8 @@ pressure-testing their own model.
    and the conditions under which it works.
 4. **Plan validation** — each play comes with concrete experiments and signals to watch
    so the team can test cheaply before committing.
-5. **Compare & revisit** — save analyses per company and compare plays across the portfolio.
+5. **(Planned) Compare & revisit** — save analyses per company and compare plays across
+   the portfolio. *Not in the first build — a planned enhancement (see Scope).*
 
 **The verified operation** this product exists to perform: *a monetization strategy set
 generated for a company* — a company profile submitted and a ranked, reasoned set of
