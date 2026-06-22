@@ -68,13 +68,17 @@ read like a strong analyst memo, not marketing copy.
 
 ## Scope
 
-**In scope (initial):** company-profile input; AI-generated ranked monetization plays
-with rationale, risks, and fit; suggested validation experiments; saving and comparing
-analyses across companies.
+**In scope (built v1):** company-profile input; AI-generated ranked monetization plays
+with rationale, risks, and fit; suggested validation experiments. This shipped as the
+single core engine.
 
-**Out of scope (initial):** live financial modeling / cap-table math, automated market
-data ingestion, CRM integrations, fundraising deck generation. These are candidate
-future features, not part of the first build.
+**Out of scope (v1) — planned next:** saving and comparing analyses across companies
+(history, comparison views, saved decks). Deliberately deferred from the first build; the
+natural next feature set.
+
+**Out of scope (no current plan):** live financial modeling / cap-table math, automated
+market data ingestion, CRM integrations, fundraising deck generation. Candidate future
+features, not part of the near-term roadmap.
 
 ## Strategic principles
 
