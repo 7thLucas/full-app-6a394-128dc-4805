@@ -1,0 +1,1 @@
+Build me an AI that can ideate monetization strategy of various seed stage company, tech based
